@@ -6,7 +6,14 @@ Just a simple interpreter for a joke esoteric programming language, except it's 
 
 Since there are only a few important files here, I won't bother to make a table or anything - I'll just list it all here instead.
 
-- `interpreter.b` - A working MiniStringFuck interpreter (TBC, stay tuned) written in Brainfuck
+- `interpreter.b` - **A working MiniStringFuck interpreter written in Brainfuck proven through extensive testing**
+- `function.brainfuck.php` - A working Brainfuck interpreter written in PHP.  Standard implementation - `30000` unsigned, wrapping 8-bit memory cells on a non-toroidal memory tape, `EOF` treated as `byte(0)`, non-command characters simply ignored, etc.  Common extensions (`#`, `!`) **not** supported.
+- `proof.php` - A PHP file containing all the test cases required to show that `interpreter.b` indeed works as expected and isn't just some BF self-interpreter copy and pasted from the Internet.
+- `PHPTester-3.1.0/` - The PHPTester testing framework
+
+### Viewing the Passing Assertions
+
+To view all the passing assertions contained in `proof.php`, simply copy and paste all files in this Repo into a (local) server (such as MAMP) with PHP support and navigate to the file/webpage (`proof.php`) in your browser.  Please be patient though - the test cases may take around `10` seconds to execute since neither of the Brainfuck interpreter (in PHP) and the MiniStringFuck interpreter (in Brainfuck) are optimized in any way - both use rather dumb implementations, considering the commands one by one.
 
 ## MiniStringFuck (MSF) - The Language
 
@@ -39,4 +46,4 @@ This program prints the uppercase letters `A-Z`.  Since the ASCII character code
 
 ## Proof of Working Interpreter
 
-A large number of test cases will be added shortly to confirm that `interpreter.b`, the MSF interpreter written in Brainfuck, is indeed working as expected.  For now, you'll just have to take my word for it :wink:
+A large number of test cases have been added to confirm that `interpreter.b`, the MSF interpreter written in Brainfuck, is indeed working as expected.
