@@ -44,6 +44,10 @@ Note that this program is *much* longer than the typical Brainfuck Hello World p
 
 This program prints the uppercase letters `A-Z`.  Since the ASCII character codes of uppercase `A-Z` are consecutive and increasing, MSF doesn't have to rely on cell wrapping so the program length is much shorter and probably identical to a Brainfuck program that achieves the same task.
 
+```ministringfuck
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.+.
+```
+
 ## Proof of Working Interpreter
 
 A large number of test cases have been added to confirm that `interpreter.b`, the MSF interpreter written in Brainfuck, is indeed working as expected.
