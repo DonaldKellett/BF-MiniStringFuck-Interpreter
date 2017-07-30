@@ -13,7 +13,7 @@ Since there are only a few important files here, I won't bother to make a table 
 
 ### Viewing the Passing Assertions
 
-To view all the passing assertions contained in `proof.php`, simply copy and paste all files in this Repo into a (local) server (such as MAMP) with PHP support and navigate to the file/webpage (`proof.php`) in your browser.
+To view all the passing assertions contained in `proof.php`, simply copy and paste all files in this Repo into a (local) server (such as MAMP) with PHP support and navigate to the file/webpage (`proof.php`) in your browser.  Please be patient though - the test cases may take around `3` seconds to execute.
 
 ## MiniStringFuck (MSF) - The Language
 
