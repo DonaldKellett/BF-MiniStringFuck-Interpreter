@@ -1,19 +1,19 @@
 # BF-MiniStringFuck-Interpreter
 
-Just a simple interpreter for a joke esoteric programming language, except it's written in Brainfuck.  Public Domain (no copyright, no license, no attribution required :wink:)
+Just a simple interpreter for a joke esoteric programming language, except it's written in Brainfuck.  `interpreter.b` and `proof.php` are public domain (no copyright, no license, no attribution required :wink:) - other files included in this Repo may have their own licenses/copyright
 
 ## File Synopsis
 
 Since there are only a few important files here, I won't bother to make a table or anything - I'll just list it all here instead.
 
 - `interpreter.b` - **A working MiniStringFuck interpreter written in Brainfuck proven through extensive testing**
-- `function.brainfuck.php` - A working Brainfuck interpreter written in PHP.  Standard implementation - `30000` unsigned, wrapping 8-bit memory cells on a non-toroidal memory tape, `EOF` treated as `byte(0)`, non-command characters simply ignored, etc.  Common extensions (`#`, `!`) **not** supported.
+- `interpreter/php/function.brainfuck.php` - A working [Brainfuck interpreter](https://github.com/DonaldKellett/Brainfuck) written in PHP (MIT Licensed - see repository of origin for more details).  Standard implementation - `30000` unsigned, wrapping 8-bit memory cells on a non-toroidal memory tape, `EOF` treated as `byte(0)`, non-command characters simply ignored, etc.  Common extensions (`#`, `!`) **not** supported.
 - `proof.php` - A PHP file containing all the test cases required to show that `interpreter.b` indeed works as expected and isn't just some BF self-interpreter copy and pasted from the Internet.
-- `PHPTester-3.1.0/` - The PHPTester testing framework
+- `PHPTester-3.1.0/` - The [PHPTester](https://github.com/DonaldKellett/PHPTester) testing framework (MIT Licensed - see repository of origin for more details)
 
 ### Viewing the Passing Assertions
 
-To view all the passing assertions contained in `proof.php`, simply copy and paste all files in this Repo into a (local) server (such as MAMP) with PHP support and navigate to the file/webpage (`proof.php`) in your browser.  Please be patient though - the test cases may take around `10` seconds to execute since neither of the Brainfuck interpreter (in PHP) and the MiniStringFuck interpreter (in Brainfuck) are optimized in any way - both use rather dumb implementations, considering the commands one by one.
+To view all the passing assertions contained in `proof.php`, simply copy and paste all files in this Repo into a (local) server (such as MAMP) with PHP support and navigate to the file/webpage (`proof.php`) in your browser.
 
 ## MiniStringFuck (MSF) - The Language
 

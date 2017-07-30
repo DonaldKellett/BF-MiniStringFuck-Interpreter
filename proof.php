@@ -8,7 +8,7 @@
 */
 
 // Working Brainfuck Interpreter
-require 'function.brainfuck.php';
+require 'interpreter/php/function.brainfuck.php';
 // TDD Framework
 require 'PHPTester-3.1.0/class.phptester.php';
 // Read BF program and store as string
